@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="breadcrumb-text product-more">
+            <div class="breadcrumb-text product-more text-left">
               <a href="./home.html"><i class="fa fa-home"></i> Home</a>
               <span>Detail</span>
             </div>
@@ -24,7 +24,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="product-pic-zoom">
-                  <img class="product-big-img" src="img/mickey1.jpg" alt="" />
+                  <img class="product-big-img" :src="sumberimg" alt="" />
                 </div>
                 <div class="product-thumbs">
                   <carousel
@@ -53,7 +53,7 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="product-details">
+                <div class="product-details text-left">
                   <div class="pd-title">
                     <span>oranges</span>
                     <h3>Pure Pineapple</h3>
@@ -113,6 +113,11 @@ export default {
     HeaderHilya,
     FooterHilya,
     carousel,
+  },
+  data() {
+    return {
+      sumberimg: "img/mickey2.jpg",
+    };
   },
 };
 </script>
