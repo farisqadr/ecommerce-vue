@@ -100,8 +100,10 @@
                     <h4>$495.00</h4>
                   </div>
                   <div class="quantity">
-                    <a href="shopping-cart.html" class="primary-btn pd-cart"
-                      >Add To Cart</a
+                    <router-link to="/cart"
+                      ><div class="primary-btn pd-cart">
+                        Add To Cart
+                      </div></router-link
                     >
                   </div>
                 </div>
@@ -134,7 +136,6 @@ export default {
     HeaderHilya,
     FooterHilya,
     carousel,
-
     RelatedProduct,
   },
   data() {
